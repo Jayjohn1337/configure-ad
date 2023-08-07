@@ -34,6 +34,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>Deployment and Configuration Steps</h2>
 
+<h3>Setup Resources in Azure</h3>
+
 <p>
 1a.Using Microsoft Azure search for "resource group" in the highlighted field in orange. Or<br>
   <img src="https://github.com/Jayjohn1337/configure-ad/assets/67848718/90797d4c-0cb8-4c82-89d0-32cf65823187"/><br>
@@ -51,8 +53,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
   <img src="https://github.com/Jayjohn1337/configure-ad/assets/67848718/b5547bea-16fe-4809-92e2-145446db3c3b"/><br>
   <img src="https://github.com/Jayjohn1337/configure-ad/assets/67848718/5b651d55-2a7a-4faf-b95e-beecd62fb1d9"/><br>
 
-
-
+1e. Create Client VM (Windows 10) named "Client-1". Click Disk-- Network-- Review+Create, wait for validation to complete then click Create.<br>
+  <img src="https://github.com/Jayjohn1337/configure-ad/assets/67848718/18eb9691-33ce-4a11-8472-3a9e796a79ff"/><br>
+  <img src="https://github.com/Jayjohn1337/configure-ad/assets/67848718/324b4ded-65fd-4b67-b22f-47598bca2eb5"/><br>
 
 </p>
 
