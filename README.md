@@ -57,6 +57,15 @@ This tutorial outlines the implementation of on-premises Active Directory within
   <img src="https://github.com/Jayjohn1337/configure-ad/assets/67848718/18eb9691-33ce-4a11-8472-3a9e796a79ff"/><br>
   <img src="https://github.com/Jayjohn1337/configure-ad/assets/67848718/324b4ded-65fd-4b67-b22f-47598bca2eb5"/><br>
 
+1f. Set Domain Controller's NIC Private IP address to static. Go back to Virtual Machines and Click DC-1-- Networking-- Network Interface-- IP Configurations-- ipconfig-- Static.<br>
+  <img src="https://github.com/Jayjohn1337/configure-ad/assets/67848718/43af6eb8-ce2b-40a1-aa72-103cc11c28c7"/><br>
+  <img src="https://github.com/Jayjohn1337/configure-ad/assets/67848718/1943b3ef-ddf7-4108-bc34-f3939fb76db2"/><br>
+  <img src="https://github.com/Jayjohn1337/configure-ad/assets/67848718/8707dc5c-0c3d-4fe9-88f6-db80922c5c6a"/><br>
+  <img src="https://github.com/Jayjohn1337/configure-ad/assets/67848718/9dba2f89-dc2b-46c6-826c-a50c536e34d2"/><br>
+  <img src="https://github.com/Jayjohn1337/configure-ad/assets/67848718/a050a047-6033-454b-8fdf-c9e17a3baecf"/><br>
+  <img src="https://github.com/Jayjohn1337/configure-ad/assets/67848718/26adf0e0-afb4-47cd-8556-766c76ed22f8"/><br>
+  <img src="https://github.com/Jayjohn1337/configure-ad/assets/67848718/2bb9aef4-dd14-4b0f-8b90-a8b2653ce5b1"/><br>
+
 </p>
 
 <br />
@@ -64,7 +73,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
 <!--<img src="https://github.com/Jayjohn1337/configure-ad/assets/67848718/a6acbd78-a00d-4796-b4f3-76002f408e93"/>-->
 </p>
-<p>
+<!--<p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />
@@ -72,6 +81,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+<!--
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
