@@ -101,8 +101,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h3>Create an Admin and normal User account in AD</h3>
 
 <p>
-4a.
-<!--<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+4a.Search for <br>
+  <img src="https://github.com/Jayjohn1337/configure-ad/assets/67848718/71da65f7-f536-477e-b3bb-4ff669d81f55"/>
+  
 </p>
 <!--
 <p>
