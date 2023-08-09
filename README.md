@@ -70,16 +70,39 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <br />
 
-<p>
-<!--<img src="https://github.com/Jayjohn1337/configure-ad/assets/67848718/a6acbd78-a00d-4796-b4f3-76002f408e93"/>-->
-</p>
-<!--<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+<h3>Ensure Connectivity between the Client and Domain Controller</h3>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+2a. Use Remote Desktop Connection app on Windows/Remote Desktop for Windows app on MacOS to log into Client-1 and ping DC-1's IP address with ping -t (perpetual ping). Ping will time out because DC-1 firewall is configured to deny ICMP traffic.<br>
+  <img src="https://github.com/Jayjohn1337/configure-ad/assets/67848718/2c6efb41-2eca-4abd-b599-ad4208f522ba"/>
+
+2b. Log into Domain Controller DC-1 and enable ICMPv4 on the local Windows firewall.<br>
+  <img src="https://github.com/Jayjohn1337/configure-ad/assets/67848718/3cd9565e-b55f-4de5-85a5-ad1c1492f3c1"/><br>
+
+2c. Check back at Client-1 to see ping succeed.<br>
+  <img src="https://github.com/Jayjohn1337/configure-ad/assets/67848718/70dd24e4-5c87-48bc-ba9e-7884d34361a8"/><br>
+</p>
+
+<br />
+
+<h3>Install Active Directory</h3>
+
+<p>
+3a. Login to DC-1 and install Active Directory Domain Services. Then, promote as a DC: Setup a new forest as mydomain.com. Finally, restart and log back into the DC.<br>
+  <img src="https://github.com/Jayjohn1337/configure-ad/assets/67848718/fb732f2a-7940-4218-b364-7014242b7c32"/><br>
+  <img src="https://github.com/Jayjohn1337/configure-ad/assets/67848718/1d1a65c7-f06d-4094-952c-34aafb48b3d2"/><br>
+
+3b. After Active Directory installs, return to server manager and click on the notification triangle. Then proceed to Promote this server to a domain controller. Click Next until install is available. Once installed DC will restart. When logging back into Remote Desktop, the user name is now 'mydomain\[insert user name]'. <br>
+  <img src="https://github.com/Jayjohn1337/configure-ad/assets/67848718/0935f8df-06af-4705-8292-83bd38754bb8"/><br>
+
+  </p>
+<br />
+
+<h3>Create an Admin and normal User account in AD</h3>
+
+<p>
+4a.
+<!--<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <!--
 <p>
