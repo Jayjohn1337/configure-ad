@@ -30,7 +30,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Step 4: Create an Admin and Normal User Account in AD
 - Step 5: Join Client-1 on your domain (mydomain.com)
 - Step 6: Setup Remote Desktop for Non-Administrative Users on Client-1
-- Step 7: Create Aditional Users and attempt to log into Client-1 with one of the Users
+
 
 <h2>Deployment and Configuration Steps</h2>
 
@@ -101,12 +101,27 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h3>Create an Admin and normal User account in AD</h3>
 
 <p>
-4a.Search for <br>
-  <img src="https://github.com/Jayjohn1337/configure-ad/assets/67848718/71da65f7-f536-477e-b3bb-4ff669d81f55"/>
-  
+4a. Search for Active Directory Users and Computers or find it in Tools in the Server Manager<br>
+  <img src="https://github.com/Jayjohn1337/configure-ad/assets/67848718/71da65f7-f536-477e-b3bb-4ff669d81f55"/><br>
+
+4b. Create 2 Organizational Units by right-clicking mydomain.com-- New-- Organizational Unit. Name one '_EMPLOYEES' and the other '_ADMINS'.(Easily Searchable)<br>
+  <img src="https://github.com/Jayjohn1337/configure-ad/assets/67848718/e3698cbb-9a3e-4b39-b209-297163548194"/><br>
+
+4c. To create a new admin user right-click _ADMINS folder-- New-- User. <br>
+  <img src="https://github.com/Jayjohn1337/configure-ad/assets/67848718/46aa3404-9f91-4449-b142-e8040467bc8c"/><br>
+
+4d. Once the user is created, make it into the admin user by right-clicking the User-- select Properties-- Member Of-- Add-- type Domain-- Check Names-- select Domain Admins-- OK-- Apply-- and OK again.<br>
+  <img src="https://github.com/Jayjohn1337/configure-ad/assets/67848718/79edd328-dd79-4dfb-b5ed-d2d43d09f4a9"/><br>
+
+4e. Log out of DC-1 and log back in with the newly created admin user to verify process was a success.<br>
 </p>
-<!--
+
+<br />
+
+<h3>Join Client-1 to your domain (mydomain.com)</h3>
+
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+5a. 
+  <img src="
 </p>
 <br />
