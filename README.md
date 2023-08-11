@@ -29,7 +29,6 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Step 3: Install Active Directory
 - Step 4: Create an Admin and Normal User Account in AD
 - Step 5: Join Client-1 on your domain (mydomain.com)
-- Step 6: Setup Remote Desktop for Non-Administrative Users on Client-1
 
 
 <h2>Deployment and Configuration Steps</h2>
@@ -132,6 +131,10 @@ This tutorial outlines the implementation of on-premises Active Directory within
 5d. After restarting, Client-1 is now joined into the domain. Login to Client-1 with any User that is authorized to login into DC-1.<br>
 
 5e. Optional* If you wanted a group of users to be able to remote desktop into Client-1, right-click the Windows icon in the bottom left of Remote Desktop-- System-- Remote Desktop-- Select users that can remotely access this PC-- Add-- type 'domain users' (all users in DC-1)-- check names-- OK.<br>
+
+Note: through the use of scripts in Windows Powershell ISE, automation can be used to easily create new users on DC-1 and login into Client-1 with credentials created on DC-1 in Active Directory.
+
+
 
 </p>
 <br />
