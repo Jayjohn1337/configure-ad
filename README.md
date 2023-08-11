@@ -121,7 +121,17 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h3>Join Client-1 to your domain (mydomain.com)</h3>
 
 <p>
-5a. 
-  <img src="
+5a. In the Azure portal, set Client-1's DNS settings to the DC-1's Private IP address. In the Azure portal click Virtual Machines-- Client-1-- Networking-- select Network Interface (link to the right)-- DNS servers-- Custom option-- type in DC-1 private IP into the DNS server field.<br>
+  <img src="https://github.com/Jayjohn1337/configure-ad/assets/67848718/c1cacc51-050f-49ce-a5b9-ccd7faf16461"/><br>
+
+5b. From Azure portal restart Client-1<br>
+
+5c. Once logged back into Client-1, right-click the Windows icon in the bottom left of the screen in Remote Desktop-- System-- Rename this PC (advanced)-- Change-- Domain option-- type 'mydomain.com'-- OK-- Use login credentials of any that is authorized to log in to DC-1-- OK-- OK-- Close-- Restart.<br> 
+  <img src="https://github.com/Jayjohn1337/configure-ad/assets/67848718/4184e4b3-97b0-46bb-9845-795a177251f0"/><br>
+
+5d. After restarting, Client-1 is now joined into the domain. Login to Client-1 with any User that is authorized to login into DC-1.<br>
+
+5e. Optional* If you wanted a group of users to be able to remote desktop into Client-1, right-click the Windows icon in the bottom left of Remote Desktop-- System-- Remote Desktop-- Select users that can remotely access this PC-- Add-- type 'domain users' (all users in DC-1)-- check names-- OK.<br>
+
 </p>
 <br />
